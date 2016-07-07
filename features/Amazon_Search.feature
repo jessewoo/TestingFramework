@@ -1,3 +1,4 @@
+# ON TERMINAL: cucumber features/Amazon_Search.feature
 Feature: Amazon Search Functionality
 
 Scenario: Users can search for a specific item on Amazon
