@@ -2,15 +2,6 @@
 require 'watir-webdriver'
 require 'cucumber'
 require 'page-object'
-require 'page-object/page_factory'
-require 'rspec-expectations'
-require 'data_magic'
-
-World(PageObject::PageFactory)
-
-TEST_DATA_DIR = "./features/support/test_data"
-DataMagic.yml_directory = './features/support/test_data/' #Tells data magic to look for data in
-
 
 def browser_name
     (ENV['BROWSER'] ||= 'chrome').downcase.to_sym
@@ -52,3 +43,16 @@ Before do |scenario|
   end
 end
 
+After do |scenario|
+  begin
+    if scenario.failed?
+      Dir::mkdir('screenshots') if not File.directory?('screenshots')
+      screenshot = "./screenshots/FAILED_#{scenario.name.gsub(' ','_').gsub(/[^0-9A-Za-z_]/, '')}.png"
+      # puts screenshot
+      @browser.driver.save_screenshot(screenshot)
+      embed screenshot, 'image/png'
+    end
+  ensure  
+    @browser.close
+  end  
+end
