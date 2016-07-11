@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>features/step_definitions/rcsb_search.rb</string>
+	<string>features/pages/search_page.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,42 +21,40 @@
 	<integer>205</integer>
 	<key>metaData</key>
 	<dict>
+		<key>JP_automation_rb/sign_ui_spec.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>2</integer>
+		</dict>
+		<key>JP_automation_rb/signup_ui_page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>27</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>features/Amazon_Search.feature</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>48</integer>
-				<key>line</key>
-				<integer>6</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>48</integer>
-				<key>line</key>
-				<integer>6</integer>
-			</dict>
-		</dict>
-		<key>features/Rcsb_Search.feature</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>45</integer>
+				<integer>29</integer>
 				<key>line</key>
 				<integer>6</integer>
 			</dict>
@@ -65,14 +63,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>features/step_definitions/amazon_search.rb</key>
+		<key>features/pages/search_page.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>27</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -86,21 +84,7 @@
 				<key>column</key>
 				<integer>3</integer>
 				<key>line</key>
-				<integer>19</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>support/env.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>28</integer>
-				<key>line</key>
-				<integer>1</integer>
+				<integer>13</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -110,15 +94,15 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>features/Amazon_Search.feature</string>
-		<string>features/step_definitions/amazon_search.rb</string>
-		<string>features/Rcsb_Search.feature</string>
 		<string>features/step_definitions/rcsb_search.rb</string>
-		<string>support/env.rb</string>
+		<string>features/Amazon_Search.feature</string>
+		<string>JP_automation_rb/sign_ui_spec.rb</string>
+		<string>JP_automation_rb/signup_ui_page.rb</string>
+		<string>features/pages/search_page.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1521, 266}, {740, 799}}</string>
+	<string>{{1518, -114}, {890, 880}}</string>
 </dict>
 </plist>
