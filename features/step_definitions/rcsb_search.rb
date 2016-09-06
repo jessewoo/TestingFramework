@@ -1,4 +1,5 @@
 # USER SEARCHES ONE TERM
+# Acceptance Test Driven Development
 Given(/^a user goes to RCSB$/) do
   @browser.goto "http://www.rcsb.org"
 end
