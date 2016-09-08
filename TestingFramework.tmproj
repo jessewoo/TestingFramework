@@ -18,31 +18,17 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>411</integer>
+	<integer>304</integer>
 	<key>metaData</key>
 	<dict>
-		<key>puppies/adoption_helper.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>48</integer>
-				<key>line</key>
-				<integer>12</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>test_puppies/features/adopting_puppies.feature</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
+				<integer>47</integer>
 				<key>line</key>
-				<integer>21</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -54,9 +40,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>32</integer>
+				<integer>61</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>20</integer>
+		</dict>
+		<key>test_puppies/features/support/pages/checkout_page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>26</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>test_puppies/features/support/pages/shopping_cart_page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>40</integer>
+				<key>line</key>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -68,11 +82,12 @@
 	<array>
 		<string>test_puppies/features/adopting_puppies.feature</string>
 		<string>test_puppies/features/step_definitions/adopting_puppy_steps.rb</string>
-		<string>puppies/adoption_helper.rb</string>
+		<string>test_puppies/features/support/pages/checkout_page.rb</string>
+		<string>test_puppies/features/support/pages/shopping_cart_page.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1762, -299}, {845, 554}}</string>
+	<string>{{1621, 17}, {847, 980}}</string>
 </dict>
 </plist>
