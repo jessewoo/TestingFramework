@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>test_puppies/features/step_definitions/adopting_puppy_steps.rb</string>
+	<string>test_puppies/features/support/env.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,17 +18,31 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>304</integer>
+	<integer>235</integer>
 	<key>metaData</key>
 	<dict>
+		<key>test_puppies/Gemfile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>test_puppies/features/adopting_puppies.feature</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>47</integer>
+				<integer>55</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -40,23 +54,51 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>61</integer>
+				<integer>33</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>20</integer>
+			<integer>5</integer>
+		</dict>
+		<key>test_puppies/features/support/env.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>test_puppies/features/support/pages/checkout_page.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>35</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>15</integer>
+		</dict>
+		<key>test_puppies/features/support/pages/home_page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>21</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -68,9 +110,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>40</integer>
+				<integer>29</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -81,13 +123,16 @@
 	<key>openDocuments</key>
 	<array>
 		<string>test_puppies/features/adopting_puppies.feature</string>
-		<string>test_puppies/features/step_definitions/adopting_puppy_steps.rb</string>
+		<string>test_puppies/Gemfile</string>
+		<string>test_puppies/features/support/env.rb</string>
 		<string>test_puppies/features/support/pages/checkout_page.rb</string>
+		<string>test_puppies/features/step_definitions/adopting_puppy_steps.rb</string>
+		<string>test_puppies/features/support/pages/home_page.rb</string>
 		<string>test_puppies/features/support/pages/shopping_cart_page.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1621, 17}, {847, 980}}</string>
+	<string>{{671, -11}, {758, 872}}</string>
 </dict>
 </plist>

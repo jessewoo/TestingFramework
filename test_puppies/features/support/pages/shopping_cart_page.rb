@@ -7,7 +7,7 @@ class ShoppingCartPage
   SUBTOTAL_COLUMN = 3
   LINES_PER_PUPPY = 6
   
-  button(:proceeed_to_checkout, :value => "Complete the Adoption")
+  button(:proceed_to_checkout, :value => "Complete the Adoption")
   button(:continue_adopting, :value => "Adopt Another Puppy")
   table(:cart, :index => 0)
   cell(:cart_total, :class => "total_cell")
