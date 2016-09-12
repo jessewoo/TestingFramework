@@ -1,5 +1,8 @@
+require_relative 'side_menu_panel'
+
 class HomePage 
   include PageObject
+  include SideMenuPanel
       
   PUPPY_LOOKUP = {
     'Brook' => 0,

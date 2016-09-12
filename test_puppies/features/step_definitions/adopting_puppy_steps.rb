@@ -26,12 +26,30 @@ When /^I complete the adoption$/ do
 end
 
 When /^I complete the adoption of a puppy$/ do 
-  on_page(HomePage).select_puppy 
-  on_page(DetailsPage).add_to_cart 
-  on_page(ShoppingCartPage).proceed_to_checkout 
-  on_page(CheckoutPage).checkout
+  # on_page(HomePage).select_puppy 
+  # on_page(DetailsPage).add_to_cart 
+  # on_page(ShoppingCartPage).proceed_to_checkout 
+  # on_page(CheckoutPage).checkout
+
+  navigate_to(CheckoutPage).checkout
 end
 
+
+# Error Message that pops up with Name Field Blank
+When /^I checkout leaving the name field blank/ do 
+  # on_page(HomePage).select_puppy 
+  # on_page(DetailsPage).add_to_cart 
+  # on_page(ShoppingCartPage).proceed_to_checkout 
+  # # Use all the default data except for the name field, pass an empty String
+  # on_page(CheckoutPage).checkout('name' => '')
+
+  navigate_to(CheckoutPage).checkout('name' => '')
+end
+
+Then /^I should see the error message "([^\"]*)"$/ do |msg| 
+  # on_page(CheckoutPage).error_messages.should include msg
+  @current_page.error_messages.should include msg
+end
 
 # DEPRECATED
 And(/^I click the second View Details button$/) do
