@@ -7,7 +7,7 @@ class HomePage
   PUPPY_LOOKUP = {
     'Brook' => 0,
     'Hanna' => 1
-  }    
+  }  unless const_defined?(:PUPPY_LOOKUP)
       
   page_url "http://puppies.herokuapp.com"    
       

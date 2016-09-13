@@ -3,9 +3,9 @@ class ShoppingCartPage
   include PageObject
   
   # Constants
-  NAME_COLUMN = 1
-  SUBTOTAL_COLUMN = 3
-  LINES_PER_PUPPY = 6
+  NAME_COLUMN = 1 unless const_defined?(:NAME_COLUMN)
+  SUBTOTAL_COLUMN = 3 unless const_defined?(:SUBTOTAL_COLUMN)
+  LINES_PER_PUPPY = 6 unless const_defined?(:LINES_PER_PUPPY)
   
   button(:proceed_to_checkout, :value => "Complete the Adoption")
   button(:continue_adopting, :value => "Adopt Another Puppy")

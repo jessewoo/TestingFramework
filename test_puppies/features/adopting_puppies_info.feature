@@ -31,8 +31,6 @@ Feature: Adopting puppies
        And I click the Place Order button
        Then I should see "Thank you for adopting a puppy!"
        
-       
-       
   Scenario Outline: Adopting one puppy
    		When I click the View Details button
    		And I click the Adopt Me button
