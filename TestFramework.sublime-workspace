@@ -8,26 +8,34 @@
 	"buffers":
 	[
 		{
-			"file": "test_puppies/features/support/pages/home_page.rb",
+			"file": "rcsb_testing_prototype/features/homepage_behavior.feature",
 			"settings":
 			{
-				"buffer_size": 945,
+				"buffer_size": 254,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test_puppies/features/support/pages/shopping_cart_page.rb",
+			"file": "rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
 			"settings":
 			{
-				"buffer_size": 1371,
+				"buffer_size": 4295,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test_puppies/features/starting_point.feature",
+			"file": "rcsb_testing_prototype/features/support/pages/home_page.rb",
 			"settings":
 			{
-				"buffer_size": 390,
+				"buffer_size": 144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rcsb_testing_prototype/features/support/pages/main_nav_panel.rb",
+			"settings":
+			{
+				"buffer_size": 385,
 				"line_ending": "Unix"
 			}
 		}
@@ -65,18 +73,40 @@
 	"expanded_folders":
 	[
 		"/Users/jessewoo/GIT/TestingFramework",
+		"/Users/jessewoo/GIT/TestingFramework/features",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies",
-		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/step_definitions",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages"
 	],
 	"file_history":
 	[
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/login_mypdb_steps.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/Gemfile",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/downloads_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/structure_summary_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/admin_puppy_steps.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/env.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/home_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/error_panel.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/adopting_puppy_steps.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/hooks.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/main_nav_panel.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/transformations.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/Rakefile",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/shopping_cart_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/home_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/shopping_cart_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/starting_point.feature",
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/Gemfile",
 		"/Users/jessewoo/GIT/TestingFramework/start_puppies/view_rcsb_db.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/adopting_puppies_info.feature",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/adopting_puppies.feature",
-		"/Users/jessewoo/GIT/TestingFramework/test_puppies/Gemfile",
 		"/Users/jessewoo/GIT/TestingFramework/puppies/Gemfile",
 		"/Users/jessewoo/GIT/TestingFramework/puppies/app/controllers/agency_controller.rb",
 		"/Users/jessewoo/GIT/TestingFramework/puppies/app/controllers/application_controller.rb",
@@ -87,7 +117,6 @@
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/env.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/step_definitions/admin_puppy_steps.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/landing_page.rb",
-		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/home_page.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/side_menu_panel.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/process_puppy_page.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages/error_panel.rb",
@@ -136,24 +165,82 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "test_puppies/features/support/pages/home_page.rb",
+					"file": "rcsb_testing_prototype/features/homepage_behavior.feature",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 945,
+						"buffer_size": 254,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								199,
-								163
+								67,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "rcsb_testing_prototype/features/support/pages/home_page.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
 							]
 						],
 						"settings":
@@ -170,64 +257,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "test_puppies/features/support/pages/shopping_cart_page.rb",
+					"buffer": 3,
+					"file": "rcsb_testing_prototype/features/support/pages/main_nav_panel.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1371,
+						"buffer_size": 385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								381,
+								381
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "test_puppies/features/starting_point.feature",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								30,
-								30
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -239,7 +293,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
