@@ -8,19 +8,34 @@
 	"buffers":
 	[
 		{
-			"file": "test_headless/features/support/env.rb",
+			"file": "rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
 			"settings":
 			{
-				"buffer_size": 440,
-				"line_ending": "Unix",
-				"name": "env.rb"
+				"buffer_size": 1257,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test_headless/features/step_definitions/google_steps.rb",
+			"file": "rcsb_testing_prototype/features/support/pages/home_page.rb",
 			"settings":
 			{
-				"buffer_size": 465,
+				"buffer_size": 543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rcsb_testing_prototype/features/homepage_behavior.feature",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rcsb_testing_prototype/features/support/hooks.rb",
+			"settings":
+			{
+				"buffer_size": 156,
 				"line_ending": "Unix"
 			}
 		}
@@ -58,24 +73,42 @@
 	"expanded_folders":
 	[
 		"/Users/jessewoo/GIT/TestingFramework",
-		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions",
-		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support",
+		"/Users/jessewoo/GIT/TestingFramework/features/pages",
+		"/Users/jessewoo/GIT/TestingFramework/features/step_definitions",
 		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages",
-		"/Users/jessewoo/GIT/TestingFramework/test_headless",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/spec",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/features",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/step_definitions",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/support",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/step_definitions",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support/pages",
 		"/Users/jessewoo/GIT/TestingFramework/test_puppies",
-		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/step_definitions",
-		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/support/pages"
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features",
+		"/Users/jessewoo/GIT/TestingFramework/test_puppies/features/step_definitions"
 	],
 	"file_history":
 	[
-		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/homepage_behavior.feature",
-		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
-		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/hooks.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/spec/spec_helper.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/spec/syntaxes_spec.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/step_definitions/rcsb_homepage_steps.rb",
 		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/headless_test.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/rcsb_homepage.feature",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support/pages/home_page.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support/env.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/Gemfile",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support/pages/main_nav_panel.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/homepage_behavior.feature",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/support/hook.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/features/spec/spec_helper.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless2/test.png",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/step_definitions/google_steps.rb",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/support/hook.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/home_page.feature",
+		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/support/env.rb",
+		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/hooks.rb",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/features/Gemfile",
 		"/Users/jessewoo/GIT/TestingFramework/test_headless/Gemfile",
 		"/Users/jessewoo/GIT/TestingFramework/rcsb_testing_prototype/features/support/pages/home_page.rb",
@@ -161,25 +194,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "test_headless/features/support/env.rb",
+					"file": "rcsb_testing_prototype/features/step_definitions/browsing_homepage_steps.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 1257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								440,
-								440
+								399,
+								399
 							]
 						],
 						"settings":
 						{
-							"auto_name": "env.rb",
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -190,19 +224,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "test_headless/features/step_definitions/google_steps.rb",
+					"file": "rcsb_testing_prototype/features/support/pages/home_page.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 465,
+						"buffer_size": 543,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								465,
-								465
+								537,
+								537
 							]
 						],
 						"settings":
@@ -214,6 +248,62 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "rcsb_testing_prototype/features/homepage_behavior.feature",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "rcsb_testing_prototype/features/support/hooks.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -296,7 +386,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 312.0,
+	"side_bar_width": 386.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

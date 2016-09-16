@@ -4,5 +4,5 @@ Feature: Browsing around the RCSB homepage
     Given I am on the rcsb.org site
        
   Scenario: Click on Molecule of the Month
-    When I click on Molecule of the Month image
+    When I click on Molecule of the Month image headless
     Then I should be redirected to PDB101 page
