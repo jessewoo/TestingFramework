@@ -48,11 +48,9 @@ Given /^I am on https rcsb.org site$/ do
 end
 
 Then /^I should get a empty page$/ do
-  puts @browser_https.status
-  puts @browser_https.url
-
-  puts @browser_https.browser_network_traffic
-  # puts @browser_https.response_headers.to_a
+  @blank_site = "about:blank"
+  expect @browser_https.status.nil?
+  expect(@browser_https.url.include?(@blank_site)).to be true
 
   @browser_https.close
 end

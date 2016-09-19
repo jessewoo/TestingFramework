@@ -8,6 +8,9 @@ class HomePage
 
   image(:molecule_image, :alt => 'RCSB PDB Molecule of the Month')
 
+  text_field(:search_bar, :id => "autosearch_SearchBar")
+  button(:search_button, :id: 'searchbutton')
+
   # h5(:molecule_title, identifier = {"#{HomepageMoleculeOfTheMonth}_element h5"}.text
   # h5_title = div(:id => "HomepageMoleculeOfTheMonth").h5.text
 
@@ -18,7 +21,6 @@ class HomePage
   h4(:month_title) {
   	div_element(:id => 'HomepageMoleculeOfTheMonth').h4_element
   }
-
 
 
 end
