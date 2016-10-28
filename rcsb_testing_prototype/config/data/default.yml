@@ -3,7 +3,3 @@ checkout_page:
   # address: 123 Main Street
   # email: cheezy@example.com
   # pay_type: Check
-  name: ~full_name
-  address: ~street_address
-  email: ~email_address
-  pay_type: Check
