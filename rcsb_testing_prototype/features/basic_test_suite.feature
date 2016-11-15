@@ -1,7 +1,7 @@
 Feature: Basic Test Suite for RCSB
      
   Background:
-    Given I am on the rcsb.org site
+    Given user is on rcsb.org
        
   Scenario: Homepage User Interface Spot Checks
     When I check, the structure count will be displayed

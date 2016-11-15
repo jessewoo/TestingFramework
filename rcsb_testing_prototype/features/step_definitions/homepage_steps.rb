@@ -1,4 +1,4 @@
-Given /^I am on the rcsb.org site$/ do 
+Given /^user is on rcsb.org$/ do 
   visit_page(HomePage)
   sleep 0.5
   expect(@browser.url.include?("http://www.rcsb.org")).to be true
@@ -7,7 +7,7 @@ Given /^I am on the rcsb.org site$/ do
   expect(@hp.browser_title).to eq "RCSB Protein Data Bank - RCSB PDB"
 end
 
-When /^I check, the structure count will be displayed$/ do
+Header /^I check, the structure count will be displayed$/ do
   # Number is loaded dynamically
   @browser.link(id: "CurrentStructureCount").wait_until_present
   @structure_count = @hp.current_structure_count
@@ -93,10 +93,18 @@ When /^I click on Molecule of the Month image$/ do
   # puts @browser.div(:id => "HomepageMoleculeOfTheMonth").h5.text
   # puts @hp.molecule_month
 
-  @browser.div(:id => "HomepageMoleculeOfTheMonth").image(:alt => "RCSB PDB Molecule of the Month").parent.click
+
+# http://stackoverflow.com/questions/29304401/watir-webdriver-can-click-element-in-chrome-but-not-in-firefox
+  # Firefox can't click
+  if (@browser.driver.browser.to_s.downcase == "firefox")
+    puts "firefox can't click"
+    
+  else 
+    @browser.div(:id => "HomepageMoleculeOfTheMonth").image(:alt => "RCSB PDB Molecule of the Month").parent.click
+  end
 end
 
-
+# Currently Doesn't work on Firefox
 Then /^I should be redirected to PDB101 page$/ do
   expect(@browser.h1.text.include?(@motm_title)).to be true
   expect(@browser.title).to eq "PDB-101: #{@motm_title}"
