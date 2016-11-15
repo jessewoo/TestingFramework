@@ -24,55 +24,19 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/basic_test_suite.feature",
+			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/README.md",
 			"settings":
 			{
-				"buffer_size": 1736,
+				"buffer_size": 5985,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/structure_summary_steps.rb",
+			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features/basic_test_suite.feature",
 			"settings":
 			{
-				"buffer_size": 4085,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/test_run_browser.rb",
-			"settings":
-			{
-				"buffer_size": 535,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_phantomjs.sh",
-			"settings":
-			{
-				"buffer_size": 773,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_macos.sh",
-			"settings":
-			{
-				"buffer_size": 1695,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_ruby.sh",
-			"settings":
-			{
-				"buffer_size": 556,
+				"buffer_size": 8793,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -111,20 +75,23 @@
 	"expanded_folders":
 	[
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/config",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/config/data",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/all_scenarios",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/screenshots",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts"
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features"
 	],
 	"file_history":
 	[
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/advanced_search_steps.rb",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/basic_test_suite.feature",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/README.md",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/homepage_steps.rb",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/basic_test_suite.feature",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/structure_summary_steps.rb",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_ruby.sh",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_macos.sh",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_phantomjs.sh",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/advanced_search_steps.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/test_run_browser.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/support/hooks.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/cucumber_scripts.sh",
@@ -135,7 +102,6 @@
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/search_results_steps.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ruby.sh",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/support/pages/home_page.rb",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/structure_summary_steps.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/all_scenarios/searchresults_all.feature",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/support/pages/advanced_search_page.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/structuresummary_ui_tests.feature",
@@ -260,6 +226,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"click on link with ",
+			"click on link with",
+			"And check element by ",
 			">",
 			"eq",
 			"various welcome panels",
@@ -286,179 +255,66 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/basic_test_suite.feature",
+					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1736,
+						"buffer_size": 5985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1735,
-								1735
+								5865,
+								5865
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/structure_summary_steps.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1991,
-								1991
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 123.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/test_run_browser.rb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 535,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								139,
-								139
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_phantomjs.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 773,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_macos.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1695,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1114,
-								1114
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 862.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts/install_ubuntu_ruby.sh",
+					"buffer": 1,
+					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features/basic_test_suite.feature",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 556,
+						"buffer_size": 8793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								452,
-								513
+								5097,
+								5097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 506.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
