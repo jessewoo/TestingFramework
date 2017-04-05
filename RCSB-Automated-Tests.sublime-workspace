@@ -24,19 +24,19 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/README.md",
+			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/framework/features/basic_test_suite.feature",
 			"settings":
 			{
-				"buffer_size": 5985,
+				"buffer_size": 8793,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features/basic_test_suite.feature",
+			"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/framework/README.md",
 			"settings":
 			{
-				"buffer_size": 8793,
+				"buffer_size": 5985,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -75,15 +75,14 @@
 	"expanded_folders":
 	[
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/config",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/config/data",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/screenshots",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe",
-		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features"
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/framework",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/framework/features",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/scripts"
 	],
 	"file_history":
 	[
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/README.md",
+		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features/basic_test_suite.feature",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/README.md",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/step_definitions/homepage_steps.rb",
 		"/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_prototype/features/basic_test_suite.feature",
@@ -255,41 +254,12 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5985,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5865,
-								5865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 862.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/rcsb_testing_recipe/features/basic_test_suite.feature",
+					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/framework/features/basic_test_suite.feature",
 					"semi_transient": false,
 					"settings":
 					{
@@ -300,8 +270,8 @@
 						"selection":
 						[
 							[
-								5097,
-								5097
+								2564,
+								2564
 							]
 						],
 						"settings":
@@ -311,10 +281,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 506.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/jessewoo/GIT/RCSB-Automated-Tests/framework/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5982,
+								5982
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1244.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

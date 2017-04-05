@@ -1,128 +1,301 @@
-RCSB Automated Testing Framework 
+RCSB Automated Testing Framework Ingredients
 ====================================
 
-### PURPOSE
-Created a list of "step" ingredients for developers to build their own independent automated behavioral tests. The "step" ingredients are the foundational basic parts in building a test from scratch. Developers only need to pick out the right "step" ingredient then replace the variables within the double quotes.
+## PURPOSE
+Created a list of "step" ingredients for developers to build their own independent automated behavioral tests. 
 
-### TEST EXAMPLES
+The "step" ingredients are the foundational basic parts in building a test case from scratch. The "step" ingredients are combined to make a "recipe' test case, that's the general idea. 
+
+Developers only need to pick out the right "step" ingredient then replace the variables within the double quotes.
+
+## TEST EXAMPLES
+If there are "ingredients" that are crucial to your test cases, please let Jesse know and he'll take some time to develop it. Very complicated steps will need to dive into Page Objects. 
+
 #### Example ONE
-> Scenario: Search PDB ID<br/>
-> - Given connect to "http://www.rcsb.org"<br/>
-> - And search for "1STP"<br/>
-> - And check, browser "url" contains "explore/explore.do"
+	
+	Scenario: Search PDB ID
+		Given connect to "http://www.rcsb.org"<br/>
+		And search for "1STP"<br/>
+		And check, browser "url" contains "explore/explore.do"
 
 #### Example TWO
-> Scenario: Search PDB ID Alternative Steps<br/>
-> - Given connect to "http://www.rcsb.org"<br/>
-> - And fill in text input "id" "autosearch_SearchBar" with "Collagen"
-> - And click on button with "id" "searchbutton"
-> - And check, browser "title" contains "RCSB PDB - Search Results"
-> - And check, browser "url" contains "results/results.do"
-> - And check element by "id" "SearchParameterText", content contains "Collagen"
+	Scenario: Search PDB ID Alternative Steps
+		Given connect to "http://www.rcsb.org"<br/>
+		And fill in text input "id" "autosearch_SearchBar" with "Collagen"
+		And click on button with "id" "searchbutton"
+		And check, browser "title" contains "RCSB PDB - Search Results"
+		And check, browser "url" contains "results/results.do"
+		And check element by "id" "SearchParameterText", content contains "Collagen"
 
-In the two different examples, both utilized the "And check, browser 'XYZ' contains 'XYZ'". 
+In the two different examples, both utilized the "And check, browser 'XYZ' contains 'XYZ'".
 
 #### EXAMPLE THREE
-> Scenario: Download Tool (form within multiple forms on page)
-> - Given connect to "http://www.rcsb.org"
-> - And hover "Download" navigation, click on link with "href" "/pdb/download/download.do#Structures"
-> - And fill in text input "id" "structureIdList" with "4hhb, 1stp"
-> - And in section "download_structures_panel", checkbox with "name" "doPdb", mark as "checked"
-> - And in section "download_structures_panel", select radio button with "name" "compressed"
-> - And in section "download_structures_panel", click on button with "class" "btn-primary"
+	Scenario: Download Tool (form within multiple forms on page)
+		Given connect to "http://www.rcsb.org"
+		And hover "Download" navigation, click on link with "href" "/pdb/download/download.do#Structures"
+		And fill in text input "id" "structureIdList" with "4hhb, 1stp"
+		And in section "download_structures_panel", checkbox with "name" "doPdb", mark as "checked"
+		And in section "download_structures_panel", select radio button with "name" "compressed"
+		And in section "download_structures_panel", click on button with "class" "btn-primary"
 
-### BASIC "STEP" INGREDIENTS
-Categorized accordingly to the function of the "step" ingredient:
 
-* Browser Related
-	* connect to `"<url link>"`
+## BASIC "STEP" INGREDIENTS
+Pre-Requisite
+* Need to know how to use "inspector" tool to find the "id" or "class" values of DOM elements
+* For DOM elements without "id" or "class" hooks, should know how to select elements based on CSS
+
+The following are categorized accordingly to the function of the "step" ingredient. In the code block are examples, you can copy and paste it into your test cases, but should edit whatever is within double quotes.
+
+### Browser Related
+* connect to `"<url link>"`
+
+	`"<url link>"` could be ENV['URL'], which would indicate an argument from the command line
+
     ```ruby
     Given connect to "http://www.rcsb.org"
     ```
-	* check, browser `"<browser property>"` contains `"<browser value>"`
-		* `"<browser property>"` could be url, title
+* check, browser `"<browser property>"` contains `"<browser value>"`
+
+	`"<browser property>"` could be url, title
     ```ruby
     And check, browser "title" contains "RCSB Protein Data Bank - RCSB PDB"
     And check, browser "url" contains "http://www.rcsb.org/pdb/home/home.do"
     ```
-* Check Elements
-	* check element by `"<selector type>"` `"<selector name>"`, value `"<numerical operator>"` `"<number value>"`
-		* `"<selector type>"` could be id, class, css
-		* `"<numerical operator>"` could be >, <, =
+    
+### Utility Steps
+* go back (go back in browser history)
+
+    ```ruby
+    And go back
+    ```
+* wait `"<seconds value>"` seconds
+
+	This is useful when running tests on a browser, for developer tester to catch a glimpse of the page itself 
+    ```ruby
+    And wait "2" seconds
+    ```    
+* wait for element `"<element type>"` with `"<selector type>"` `"<selector name>"` to appear
+
+	This is useful for DOM elements that are dynamically generated by JS, like the auto-suggest search box or the advanced search form
+	
+    ```ruby
+    And wait for element "td" with "class" "smartMain" to appear
+		And wait for element "div" with "id" "autosearch_SearchBar_querySuggest" to appear
+    ```    
+    
+* scroll to element `"<selector type>"` `"<selector name>"`
+
+	This is useful when running tests on a browser, for developer tester to simulate how user would interact with a long page
+	
+    ```ruby
+    And scroll to element "id" "literaturepanel"  
+    ```   
+    
+* take screenshot of `"<file name>"`
+
+	This is useful for error detection, runs every time when a test step fails
+    ```ruby
+    And take screenshot of "3J3Q"
+    ```      
+    
+* check whether page has all images
+
+	This is useful for checking the structure summary page, maybe images are not present in the CDN, couldn't retrieve it thru REST calls
+    ```ruby
+    And check whether page has all images
+    ```      
+    
+
+    
+### Check DOM Elements
+* check HTML `"<HTML element>"` element, content contains `"<content>"`
+	
+	`"<HTML element>"` could be body
+    ```ruby
+    And check HTML "body" element, content contains "RESTful Drugs Service is running."
+    ```
+
+* check element by `"<selector type>"` `"<selector name>"`, value `"<numerical operator>"` `"<number value>"`
+	
+	`"<selector type>"` could be id, class, css
+	
+	`"<numerical operator>"` could be >, <, =
     ```ruby
     And check element by "id" "CurrentStructureCount", value ">" "123456"
     ```
-	* check element by `"<selector type>"` `"<selector name>"`, content contains `"<content>"`
+* check element by `"<selector type>"` `"<selector name>"`, content contains `"<content>"`
     ```ruby
     And check element by "id" "SearchParameterText", content contains "HIV"
 		And check element by "class" "macromoleculeRow", content contains "Streptavidin"
     ```
-* Click Elements
-	* click on image with `"<selector type>"` `"<selector name>"`
+* check element by `"<selector type>"` `"<selector name>"` with index `"<index>"`, content contains `"<content>"`
+	
+	`"<index>"` starts with '0', that being the first element; followed by '1' being the second element, '2' being the third element
+	
+	Below example show that there are multiple div with the 'col-md-4' class, and we are selecting the 3rd of that element
+
+    ```ruby
+		And check element by "class" "col-md-4" with index "2", content contains "2-[2,6-DICHLOROPHENYL)AMINO]BENZENEACETIC ACID"
+    ```
+    
+##### Check HTML Table Elements
+* check table by `"<selector type>"` `"<selector name>"`, content contains `"<content>"` in cell with row `"<row number>"`, column `"<column number>"`
+	
+	`"<row number>"` and `"<column number>"` starts with '0', the first coordinates (0,0)
+
+	Below example is targeting the cell in the 2nd row, in the 2nd column. 
+
+	```ruby
+	And check table by "class" "table-ligandsummary", content contains "Streptavidin" in cell with row "1", column "1"
+	```
+* check table by index of `"<index number>"`, content contains `"<content>"` in cell with row `"<row number>"`, column `"<column number>"`
+
+	Below example show that there are multiple tables, maybe there are no 'id' to easily hook to that table, we'll have to use index. We are targeting the 3rd table, remember index starts at '0'
+	
+	`"<content>"` can be 'none', this will indicate "Unable to location content and table" 
+
+	```ruby
+	And check table by index of "2", content contains "<drug>" in cell with row "1", column "1"
+	```
+
+### Count DOM Elements (Loop)
+* count of `"<html element>"` with `"<selector type>"` `"<selector name>"` is equal `"<count value>"`
+
+	Checking the count of the elements, useful when there is a list like search results
+    ```ruby
+    And the count of "li" with "class" "oneSearchResult" is equal "25"
+    ```       
+    
+* list out the `"<html element (child)>"` of `"<html element (parent)>"` with `"<selector type>"` `"<selector name>"`
+
+	This is useful when getting specific child content of a list of parent 
+    ```ruby
+    And list out the "h3" of "li" with "class" "oneSearchResult"
+    ```       
+    
+* list out the `"<html element (child)>"` of `"<html element (parent)>"` with index `"<index value>"` and with `"<selector type>"` `"<selector name>"`
+
+	Similar to the previous step, but narrowing it to one result with the usage of index. 
+	
+	`"<index>"` starts with '0', that being the first element.
+    ```ruby
+    And list out the "h3" of "li" with index "0" and with "class" "oneSearchResult"
+    ```  
+
+
+### Click on DOM Elements
+* click on image with `"<selector type>"` `"<selector name>"`
+
+	`"<selector type>"` could be alt, src, text, id
 	```ruby
 	And click on image with "alt" "RCSB PDB Molecule of the Month"
+	And click on image with "src" "https://cdn.rcsb.org/images/ligands/B/BTN/BTN-270.png"
 	```
-	* in section `"<section selector type>"` `"<section name>"`, click on link with `"<selector type>"` `"<selector name>"`
-		* `"<selector type>"` could be id, class, text, href
+* in section `"<section selector type>"` `"<section name>"`, click on link with `"<selector type>"` `"<selector name>"`
+	
+	`"<selector type>"` could be id, class, text, href, name
+	
 	```ruby
 	And in section "id" "header", click on link with "text" "Advanced Search"
 	And in section "id" "homepage_panelslides", click on link with "href" "#Category-search"
+	And in section "id" "health-focus-body", click on link with "href" "/browse/diabetes"
+	And in section "id" "carousel-structuregallery", click on link with "class" "right"
 	```
-	* in section `"<section selector type>"` `"<section name>"`, click on element with `"<selector type>"` `"<selector name>"` using onclick-JS
-		* `"<selector type>"` could be id, class, text
+* in section `"<section selector type>"` `"<section name>"`, click on element with `"<selector type>"` `"<selector name>"` using onclick-JS
+	
+	`"<selector type>"` could be id, class, text
+	
+	This is useful for DOM elements that are dynamically generated by JS. If the previous 'link' ingredient didn't work, then using this would solve the issue. 
+	
 	```ruby
 	And in section "id" "drilldown_options", click on element with "text" "Polymer Type" using onclick-JS
 	```
-	* click on link with `"<selector type>"` `"<selector name>"`
-		* `"<selector type>"` could be id, href
-	* hover `"<top bar navigation title>"` navigation, click on link with `"<selector type>"` `"<selector name>"`
-		* `"<top bar navigation title>"` could be one of the following Deposit, Visualize, Search, Analyze...
+* click on link with `"<selector type>"` `"<selector name>"`
+	
+	`"<selector type>"` could be id, href
+* hover `"<top bar navigation title>"` navigation, click on link with `"<selector type>"` `"<selector name>"`
+	
+	`"<top bar navigation title>"` could be one of the following Deposit, Visualize, Search, Analyze. Mainly used for top bar navigation. 
+	
 	```ruby
 	And hover "Download" navigation, click on link with "href" "/pdb/download/download.do#Structures"
 	```
-* Form Elements
-	* select option with `"<option type>"` `"<option value>"` in dropdown with `"<select selector type>"` `"<select selector value>"`
-		* `"<option type>"` could be value, text, id
-		* `"<select selector type>"` could be id, class
+
+### Interact with HTML Form Elements
+* select option with `"<option type>"` `"<option value>"` in dropdown with `"<select selector type>"` `"<select selector value>"`
+		
+	`"<option type>"` could be value, text, id
+		
+	`"<select selector type>"` could be id, class
 	```ruby
 	And select option with "value" "StructureIdQuery" in dropdown with "id" "smartSearchSubtype_0"
 	```
-	* in section `"<section selector type>"` `"<section name>"`, checkbox with `"<checkbox selector type>"` `"<checkbox selector value>"`, mark as `"<checked>"`
-		* `"<section name>"` needs to be id of that specific container
-		* `"<checkbox selector type>"` could be name, text
-		* `"<checked>"` needs to be checked, clear
+* in section `"<section selector type>"` `"<section name>"`, checkbox with `"<checkbox selector type>"` `"<checkbox selector value>"`, mark as `"<checked>"`
+	
+	`"<section name>"` needs to be id of that specific container
+	
+	`"<checkbox selector type>"` could be name, text
+	
+	`"<checked>"` needs to be checked, clear
 	```ruby
 	And in section "id" "download_structures_panel", checkbox with "name" "doPdb", mark as "checked"
 	```
-	* in section `"<section selector type>"` `"<section name>"`, select radio button with `"<radio button selector type>"` `"<radio button selector value>"`
-		* `"<radio button selector type>"` could be name, text
+* in section `"<section selector type>"` `"<section name>"`, select radio button with `"<radio button selector type>"` `"<radio button selector value>"`
+	
+	`"<radio button selector type>"` could be name, text
 	```ruby
 	And in section "id" "download_structures_panel", select radio button with "name" "compressed"
 	```
-	* fill in text input `"<input selector type>"` `"<input selector name>"` with `"<input value>"`
+* fill in text input `"<input selector type>"` `"<input selector name>"` with `"<input value>"`
 	```ruby
 	And fill in text input "id" "autosearch_SearchBar" with "HIV"
 	```
-	* click on button with `"<button selector type>"` `"<button selector name>"`
-		* `"<button selector type>"` could be text, id
+* click on button with `"<button selector type>"` `"<button selector name>"`
+	
+	`"<button selector type>"` could be text, id
 	```ruby
 	And click on button with "id" "searchbutton"
 	```
-	* in section `"<section selector type>"` `"<section name>"`, click on button with `"<button selector type>"` `"<button selector name>"`
+* in section `"<section selector type>"` `"<section name>"`, click on button with `"<button selector type>"` `"<button selector name>"`
+	
+	This is for a page with multiple forms, with multiple button elements
 	```ruby
 	And in section "id" "download_structures_panel", click on button with "class" "btn-primary"
 	```
 
-### HOW TO RUN ON TERMINAL
-Categorized accordingly to the function of the "step" ingredient:
+## HOW TO RUN ON TERMINAL
+Running the .feature (cucumber) file thru terminal
+
+Run as default - go "headless", time is optional
 ```bash
-time cucumber CHROME=true features/basic_test_suite.feature
 time cucumber features/basic_test_suite.feature
 ```
 
+Run with a Chrome browser, visually see the automation 
+```bash
+cucumber CHROME=true features/basic_test_suite.feature
+```
+
+Run only test cases with the 'active' tag
+```bash
+cucumber --tag @active features/basic_test_suite.feature
+
+```
 
 
+## RESOURCES, TIPS, and REFERENCES
+Scenario outlines: scenario with variables - Allow you to test multiple context using a truth table
+http://eggsonbread.com/2010/09/06/my-cucumber-best-practices-and-tips/
+https://github.com/watir/watir_meta/wiki/Finding-Page-Elements
+
+## CONTACT
+Not all 'ingredients' have been created, but the bulk of basic elements have been thought thru. If there are more advanced features needed, please contact Jesse. 
 
 
+## TO-DOs FOR THE FUTURE
+Please add any other to-dos you would like to see in the future
 
-
+* Testing file uploads with Cucumber - https://cassiomarques.wordpress.com/2009/01/23/how-to-test-file-uploads-with-cucumber/
+* Able to set the URL as an argument when running the cucumber terminal command - http://stackoverflow.com/questions/22845606/passing-variables-on-the-command-line-to-a-cucumber-test
+* Create a dynamic UI form to create test steps, ideas like the Google GA URL builder - https://ga-dev-tools.appspot.com/campaign-url-builder/
+* Instead of using a table inside the .feature file for scenario outline, have an external file be read - https://shvets.github.io/blog/2014/10/19/adding_source_to_gherkin_script.html

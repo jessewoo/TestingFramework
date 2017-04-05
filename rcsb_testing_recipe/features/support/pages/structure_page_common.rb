@@ -12,7 +12,7 @@ module StructurePageCommon
 	link(:tab_experiment, :id => "MoreOptions-Method")
 	link(:tab_literature, :id => "MoreOptions-DataMentions")    
 
-	h1(:structure_pdbid, :id => 'structureID')
-  h4(:structure_title, :id => 'structureTitle')
+	span(:structure_pdbid, :id => 'structureID')
+  span(:structure_title, :id => 'structureTitle')
 
 end

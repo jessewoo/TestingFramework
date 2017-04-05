@@ -1,1 +1,14 @@
+# config/cucumber.yml
+##YAML Template
+---
+# Timestamp used to generate Cucumber report name
+<% timestamp = Time.now.strftime("%Y%m%d-%H%M%S") %>
+
+# DISPLAY ON TERMINAL WINDOW.
+# NOTE: the 'simple' profile is used by the '/start_here/cloud/RUN.sh' script
 default: --no-source --color --format pretty
+simple: --no-source --no-color --format pretty
+
+# EXPORT TO LOG FOLDER, execute cucumber test thru terminal window
+default_export: --no-source --no-color --fail-fast TIME=<%= timestamp %> --out logs/<%= timestamp %>_output.log --format pretty
+default_export_color: --no-source --color --fail-fast TIME=<%= timestamp %> --out logs/<%= timestamp %>_output.log --format pretty
